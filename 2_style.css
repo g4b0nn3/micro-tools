@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+section {
+  padding: 20px;
+}
+
+.tool {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.buy-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #FF9800;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.buy-btn:hover {
+  background: #e68a00;
+}

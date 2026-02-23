@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micro-Tools Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Micro-Tools Online</h1>
+    <p>Free tools + Premium upgrades</p>
+  </header>
+
+  <section id="tools">
+    <h2>Free Tools</h2>
+
+    <!-- Password Generator -->
+    <div class="tool">
+      <h3>Password Generator</h3>
+      <input type="number" id="pwLength" placeholder="Length" min="4" max="32">
+      <button onclick="generatePassword()">Generate</button>
+      <p id="pwOutput"></p>
+    </div>
+
+    <!-- Unit Converter -->
+    <div class="tool">
+      <h3>Unit Converter (Meters ↔ Feet)</h3>
+      <input type="number" id="meters" placeholder="Meters">
+      <button onclick="convertMeters()">Convert</button>
+      <p id="feetOutput"></p>
+    </div>
+  </section>
+
+  <section id="premium">
+    <h2>Premium Tools</h2>
+    <p>Unlock advanced tools by purchasing Premium:</p>
+    <!-- Stripe / PayPal Buy Button Example -->
+    <a href="https://buy.stripe.com/test_XXXX" target="_blank" class="buy-btn">Buy Premium ($5)</a>
+
+    <div id="premiumTool" style="display:none;">
+      <h3>Advanced Budget Calculator</h3>
+      <input type="number" id="income" placeholder="Income">
+      <input type="number" id="expenses" placeholder="Expenses">
+      <button onclick="calculateBudget()">Calculate Savings</button>
+      <p id="budgetOutput"></p>
+    </div>
+  </section>
+
+  <section id="guides">
+    <h2>Useful Guides</h2>
+    <ul>
+      <li><a href="#">Top 10 Productivity Apps</a></li>
+      <li><a href="#">How to Save Money Effectively</a></li>
+      <li><a href="#">Tips for Online Security</a></li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
